@@ -1,1 +1,1 @@
-# WebProgrammingMSRIT
+# Web Programming MSRIT
