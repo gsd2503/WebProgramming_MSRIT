@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exhibitor Registration Form</title>
+    </head>
+<body>
+    <form action="">
+        <h1>Exhibitor Regitration</h1>
+        <fieldset style="border-color: red; width: 500px;">
+        <label for="prefix">Prefix:</label>
+        <input type="text" name="prefix"> <br> <br>
+        
+        <label for="name">Name: </label>
+        <input type="text" name="name" placeholder="First name"> <input type="text" name="name" placeholder="Last Name"> <br> <br>
+        
+        <label for="pronouns">Preferred Pronouns:</label>
+        <input list="pronouns">
+        <datalist id="pronouns">
+            <option value="He / Him"></option>
+            <option value="She / Her"></option>
+        </datalist>
+        <br> <br>
+        
+        <label for="email">Email:</label>
+        <input type="email" name="email" placeholder="sample@example.com"> <br> <br>
+        
+        <label for="workphone">Work Phone:</label>
+        <input type="tel" name="workphone"> <br> <br>
+
+        <label for="cellphone">cell phone:</label>
+        <input type="tel" name="cellphone"> <br> <br>
+
+        <label for="jtitle">Job Title:</label>
+        <input type="text" name="jtitle"> <br><br>
+
+        <label for="company">Company:</label>
+        <input type="text" name="company"> <br> <br>
+
+        <label for="busAddr">Full Business Address:</label> <br>
+        <input type="text" name="busAddr"> <br> <br>
+        
+        <label for="compWeb">Company Website:</label> <br>
+        <input type="url" name="compWeb">
+
+        <br><br> <br>
+        <center>
+        <input type="submit" name="" id="" value="submit">
+        </center>
+    </fieldset>
+
+    </form>
+</body>
+</html>
