@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novell Services Login</title>
+</head>
+<body>
+    <form action="">
+        <fieldset style="width: 400px; border-color: black; background-color: grey;" >
+        <table>
+        <tr>
+            <th colspan="2">
+                <center>
+                    <h1>Novel Services Login</h1>
+                </center>
+            </th>
+        </tr>
+        <tr>
+            <td><label for="uname">Username</label></td>
+            <td><input type="text" name="uname"></td>
+        </tr>
+        <tr>
+            <td><label for="pwd">Password</label></td>
+            <td><input type="password" name="pwd"></td>
+        </tr>
+        <tr>
+            <td><label for="emp">City of Employment</label></td>
+            <td><input type="text" name="emp"></td>
+        </tr>
+        <tr>
+            <td><label for="server">Webserver</label></td>
+            <td>
+                <select name="server" id="">
+                    <option value="">----Choose a server----</option>
+                    <option value="">option 1</option>
+                    <option value="">option 2</option>
+                    <option value="">option 3</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Please Specify your role</td>
+            <td><input type="radio" name="role" value="admin"> <label for="role">Admin</label><br>
+                <input type="radio" name="role" value="engineer"> <label for="role">Engineer</label><br>
+                <input type="radio" name="role" value="manager"> <label for="role">Manager</label><br>
+                <input type="radio" name="role" value="guest"> <label for="role">Guest</label><br>
+            </td>
+        </tr>
+        <tr>
+            <td>Single Sign-on to the following</td>
+            <td>
+                <input type="checkbox" name="sign-on" id=""> <label for="sign-on">Mail</label> <br>
+                <input type="checkbox" name="sign-on" id=""> <label for="sign-on">Payroll</label> <br>
+                <input type="checkbox" name="sign-on" id=""> <label for="sign-on">Self Services</label> <br>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <center>
+                    <input type="button" value="Login" onclick="alert('Form Submitted Successfully')"></td>
+                </center>
+        </tr>
+    </table>
+</fieldset>
+    </form>
+</body>
+</html>
