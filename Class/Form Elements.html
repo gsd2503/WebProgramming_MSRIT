@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Elements</title>
+</head>
+
+<body style="font-family: Arial, Helvetica, sans-serif;">
+
+    <form action="">
+
+        <fieldset>
+            <legend>Personal Information: </legend>
+            <label for="name">Name: </label><input type="text" name="name" id=""> <br> <br>
+            <label for="email">Email: </label><input type="email" name="email" id=""> <br><br>
+            <label for="pasword">Pasword: </label><input type="password" name="pasword" id=""> <br> <br>
+            <label for="phnumber">Phone Number: </label><input type="number" name="phnumber" id=""> <br><br>
+            <label for="color">Color: </label><input type="color" name="color" id=""> <br> <br>
+            <label for="date">Date: </label><input type="date" name="date" id=""> <br> <br>
+            <label for="datetime">Date , Time:  </label><input type="datetime-local" name="datetime" id=""> <br> <br>
+            <label for="file">File: </label><input type="file" name="file" id=""> <br> <br>
+            <label for="hidden">hidden: </label><input type="hidden" name="hidden" id=""> <br> <br>
+            <label for="image">Image: </label><input type="image" name="image" id=""> <br> <br>
+            <label for="month">Month: </label><input type="month" name="image" id=""> <br> <br>
+            <label for="range">Range: </label><input type="range" name="range" id=""> <br> <br>
+            <label for="Search">Search: </label><input type="search" name="Search" id=""> <br> <br>
+            <label for="tel">Telephone: </label><input type="tel" name="tel" id=""> <br> <br>
+            <label for="time">Time: </label><input type="time" name="time" id=""> <br> <br>
+            <label for="url">URL: </label><input type="url" name="url" id=""> <br> <br>
+            <label for="week">Week: </label><input type="week" name="week" id=""> <br> <br>
+
+
+            <label for="menu">Choose a car: </label> <br>
+            <select name="menu" id="">
+                <option value=""></option>
+                <option value="volvo">Volvo</option>
+                <option value="bmw">BMW</option>
+                <option value="benz">Mercedes Benz</option>
+                <option value="vw">Volkswagen</option>
+            </select> <br><br>
+            <b> <label for="gender">Gender: </label> </b>
+            <input type="radio" name="gender" value="male"> <label for="gender">Male</label>
+            <input type="radio" name="gender" value="female"> <label for="gender">Female</label>
+
+            <br><br>
+            <b><label for="lisence">Lisence Type:</label></b>
+            <br>
+            <input type="checkbox" name="lisence" value="two"> <label for="lisence">2 wheeler</label>
+            <input type="checkbox" name="lisence" value="four"> <label for="lisence">4 wheeler</label>
+            <input type="checkbox" name="lisence" value="heavyVehicle"> <label for="lisence">Heavy Vehicle</label>
+
+            <br><br>
+            
+            <textarea name="" id="" rows="5" cols="60">
+
+        </textarea>
+            <br><br>
+            <button type="button" onclick="alert('Hello World')">Click Me</button>
+            <br><br>
+
+            <h4>Data List:</h4>
+            <input list="browsers">
+            <datalist id="browsers">
+                <option value="Edge"></option>
+                <option value="Firefox"></option>
+                <option value="Chrome"></option>
+                <option value="Safari"></option>
+                <option value="Opera"></option>
+            </datalist>
+            <br><br>
+
+
+            <input type="button" name="submit" id="" value="Submit" style="width: 100px;">
+            <input type="reset" name="reset" id="" value="Reset" style="width: 100px;">
+
+            <br><br>
+        </fieldset>
+    </form>
+
+
+</body>
+
+</html>
