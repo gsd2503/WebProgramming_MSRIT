@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feedback Form</title>
+  </head>
+  <body>
+    <form action="">
+      <fieldset style="width: 400px;">
+        <legend>Customer Feedback Form</legend>
+        <table>
+          <tr>
+            <td>
+              <label for="name">Name</label>
+            </td>
+            <td><input type="text" name="name"></td>
+          </tr>
+          <tr>
+            <td><label for="ph">Cell Number</label></td>
+            <td><input type="tel" for="ph"></td>
+          </tr>
+          <tr>
+            <td><label for="feedback">Feedback</label></td>
+            <td>
+                <textarea name="feedback" id="" cols="30" rows="3" placeholder="Write any suggestions here"></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="rating">Rate us</label></td>
+            <td><input type="number" name="rating" min="1" max="10" value="5"></td>
+          </tr>
+          <tr>
+            <td><label for="range">How do you feel about us?</label></td>
+            <td>
+                <input type="range" name="range" list="markers" value="50" step="10" style="width: 250px;">
+                <datalist id="markers">
+                    <option value="0"></option>
+                    <option value="10"></option>
+                    <option value="20"></option>
+                    <option value="30"></option>
+                    <option value="40"></option>
+                    <option value="50"></option>
+                    <option value="60"></option>
+                    <option value="70"></option>
+                    <option value="80"></option>
+                    <option value="90"></option>
+                    <option value="100"></option>
+                </datalist>
+            </td>
+          </tr>
+        </table>
+        <input type="button" value="Submit">
+      </fieldset>
+    </form>
+  </body>
+</html>
