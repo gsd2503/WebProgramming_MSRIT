@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <style>
+        #bgcolor{
+            width: 300px;
+            height: 300px;
+            background-color: aqua;
+        }
+        #bgimg{
+            width: 500px;
+            height: 300px;
+            background-image: url(./0x0.webp);
+            background-size: cover;
+            background-position: center;
+            background-color: red;
+
+        }
+        #font{
+            width: 300px;
+            height: 300px;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 15px;
+            font-weight: 100;
+            background-color: aqua;
+
+        }
+        #text{
+            width: 300px;
+            height: 300px;
+            text-align:right;
+            text-decoration:line-through;
+            background-color: red;
+
+        }
+        #pad{
+            width: 300px;
+            height: 300px;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 2em;
+            font-weight: 800;
+            padding: 10px 20px;
+            background-color: aqua;
+        }
+        #margin{
+            width: 300px;
+            height: 300px;
+            background-color: red;
+            margin: 10px;
+        }
+        #border{
+            width: 300px;
+            height: 300px;
+            border: 2px solid black;
+            border-radius: 10px;
+        }
+        #lists{
+            width: 300px;
+            height: 300px;
+            border: 2px solid black;
+            border-radius: 10px;
+        }
+        #lists ul{
+            list-style-type:circle;
+        }
+        #pseudo{
+            width: 300px;
+            height: 300px;
+            border: 2px solid black;
+            border-radius: 10px;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 30px;
+        }
+        #pseudo p:hover{
+            color: blue;
+        }
+        #transition{
+            width: 300px;
+            height: 300px;
+            border: 2px solid black;
+            border-radius: 10px;
+            transition: all 1s;
+        }
+        #transition:hover{
+            background-color: orange;
+        }
+        #position{
+            width: 300px;
+            height: 300px;
+            border: 2px solid black;
+            border-radius: 10px;
+            position: absolute;
+            top: 0px;
+            left: 310px;
+
+        }
+    </style>
+</head>
+    
+<body>
+    <!-- Background properties:
+    background-color: sets background color
+    background-image: applies image as a background
+    background-repeat: control the repetion of the background image
+    background-size: defines the size of background image 
+    
+    Eample: 
+        body{
+            background-image: url{'./path'};
+            background-size: cover;
+        }
+    
+
+    font Properties:
+    font-family: Specifies the font type
+    font-size: defines the size of the text
+    font-weight: sets the thickness of the text 
+    
+    Example:
+    
+        h1{
+            font-family: Arial, Sans-serief;
+            font-size: 20px;
+        }
+     
+
+    Text Properties: 
+    Text Align: left right center justify
+    text decoration: underline, overline
+
+    Example
+        p{
+            text-align: justify;
+            text-decoration:
+        } 
+    
+
+    Padding vs Margin:
+    Padding: Space inside the elements border that pushes content inward.
+    Margin: space outside the elements border that seperates it from other elements
+
+    Example:
+        div{
+            padding: 20px;
+            margin: 30px;
+        }
+    
+
+    Borders:
+    border-width: thickness of the border
+    border-style: solid, dashed, dotted etx
+    border-color: color of the border
+
+    Example:
+        div{
+            border: 2px solid black;
+        }
+
+
+    Lists:
+    list-style-type: defines the marker for the list items (circle, square, none etc)
+
+    Example:
+        ul{
+            list-style-type: square;
+        }
+
+
+    pseudo-classes:
+    special states of the elements(hover, focus, visited)
+
+    Example:
+        a:hover{
+            color:red;
+        }
+    
+
+    Transitions and Animations:
+    Enables smooth changes in property values over time or predefined animations
+
+    Example:
+        div{
+            transition: all 0.3s;
+        }
+        div:hover{
+            background-color: yellow;
+        }
+
+
+    Position:
+    static: Default position
+    relative: postiioned relative to its normal position
+    absolute: positioned relative to its nearest positioned ancestor
+    fixed: position relative to the viewport
+
+    Example:
+        div{
+            position: absolute;
+            top: 50px;
+            left: 100px;
+        }
+    -->
+    
+    <div id="bgcolor"></div>
+    <div id="bgimg"></div>
+    <div id="font">
+        <p>Hello! This is sample text.</p>
+    </div> 
+    <div id="text">
+        <p>This is another samle text</p>
+    </div>
+    <div id="pad">
+        <p>Hello</p>
+    </div> <br>
+    <div id="margin"></div>
+    <div id="border"></div>
+    <div id="lists">
+        <ul>
+            <li>sub 1</li>
+            <li>sub 2</li>
+            <li>sub 3</li>
+            <li>sub 4</li>
+        </ul>
+    </div>
+
+    <div id="pseudo">
+        <p>hover</p>
+    </div>
+
+    <div id="transition"></div>
+
+    <div id="position"></div>
+</body>
+</html>
