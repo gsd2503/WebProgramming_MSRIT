@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="./bikes.xsl" type="text/xsl"?>
+<!DOCTYPE bike [
+	<!ELEMENT bike (name+)>
+	<!ELEMENT name (make,model,displacement,hp)>
+	<!ATTLIST name id CDATA #REQUIRED>
+	<!ELEMENT make (#PCDATA)>
+	<!ELEMENT model (#PCDATA)>
+	<!ELEMENT displacement (#PCDATA)>
+	<!ELEMENT hp (#PCDATA)>
+]>
+
+<bike>
+	<name id="01">
+	<make>Honda1</make>
+	<model>CBR1000rr1</model>
+	<displacement>1000cc1</displacement>
+	<hp>991</hp>
+	</name>
+
+	<name id="02">
+	<make>Honda2</make>
+	<model>CBR1000rr2</model>
+	<displacement>1000cc2</displacement>
+	<hp>992</hp>
+	</name>
+
+	<name id="03">
+	<make>Honda3</make>
+	<model>CBR1000rr3</model>
+	<displacement>1000cc3</displacement>
+	<hp>993</hp>
+	</name>
+
+	<name id="04">
+	<make>Honda4</make>
+	<model>CBR1000rr4</model>
+	<displacement>1000cc4</displacement>
+	<hp>994</hp>
+	</name>
+</bike>
