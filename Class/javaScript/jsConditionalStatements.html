@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional Statements</title>
+</head>
+<body>
+    <script>
+        // Conditional Statements
+
+        // Simple if
+        let a= 18
+        if (a >= 18) {
+            console.log("You are an adult");
+        }
+
+        // if else
+        let b = 17
+        if (b>=18) {
+            console.log("You are an adult");
+        } else {
+            console.log("You are a minor");
+        }
+
+        // if else if else
+        let m= 65
+        if (m>=90) {
+            console.log("Grade A");
+        } else if (m>=75) {
+            console.log("Grade B");
+        } else {
+            console.log("Grade C");
+        }
+
+        // Switch case
+        let day = "mon"
+        switch(day){
+            case "mon":
+                console.log("Start of the work week");
+                break;
+            case "fri":
+                console.log("Weekend is near");
+                break;
+            case "sat":
+                console.log("Its weekend!!");
+                break;
+            case "sun":
+                console.log("Tomorrow is monday again :(");
+                break
+            default:
+                console.log("Its a regular day");
+        }
+        
+    </script>
+</body>
+</html>
