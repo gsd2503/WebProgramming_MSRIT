@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings</title>
+</head>
+<body>
+    <script>
+        // Strings
+
+        // Length function - returns lenght of a string
+        let st = "Hello world."
+        console.log(st.length);
+        
+        // String concatenation
+        let st2 = "This is MSRIT."
+        st3 = st + st2; // Using '+' operator
+        console.log(st3);
+        console.log(st+st2);
+        console.log(st.concat(" ", st2)); // Using concat method.
+
+        // String Slicing - slice(start, end)
+        console.log(st.slice(1,5));
+        
+        // Replace - replace(a,b) a-> old word, b-> new word
+        // Does not replace the word in original string.
+        console.log(st.replace("world","MSRIT"));
+
+        // Uppercase and Lowercase
+        // Does not modify the original string
+        console.log(st.toUpperCase());
+        console.log(st2.toLowerCase());
+
+        // Trim - clears the first and end spaces
+        // Does not affects the original string
+        let st4 = "   hi   "
+        console.log(st4.trim());
+        console.log(st4);
+
+        // Indexof - returns the index of the first occurance of the element in the string
+        // syntax -> string.indexof('character' or "word")
+        console.log(st.indexOf('d'));
+
+        // Split - splits the given string at the mentioned seperator.
+        // Default will be space " ".
+        // Doee not affect the original string
+        // returns a array.
+        let st5 = "Hello world this is msrit"
+        console.log(st5.split(' '));
+    </script>
+</body>
+</html>
