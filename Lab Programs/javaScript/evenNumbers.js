@@ -1,3 +1,5 @@
+// Print even numbers from 1 to n
+
 let a = 10
 let i = 0
 while (i<=a) {
