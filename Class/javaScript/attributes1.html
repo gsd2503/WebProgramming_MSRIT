@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <label for="listItem">Data: </label>
+    <input type="text" name="listItem" id="listItem">
+    <Button onclick="add()">Add</Button>
+    <button onclick="remove()">Remove</button>
+    <br>
+    <h3>To Do list</h3>
+    <ul id="list">
+
+    </ul>
+    <script>
+        function add() {
+            let list = document.getElementById('list')
+            let listItem = document.getElementById('listItem').value
+            let listChild = document.createElement('li')
+            listChild.innerHTML = listItem
+            list.appendChild(listChild)
+            document.getElementById("listItem").value = ""
+        }
+        function remove(){
+            let list = document.getElementsByTagName('li')
+            let lastElement = list.length - 1
+            console.log(lastElement);
+
+            list.removeChild()
+        }
+    </script>
+</body>
+
+</html>
