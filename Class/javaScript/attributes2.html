@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="a"></div>
+    <div class="a"></div>
+    <div class="a"></div>
+    <div class="a"></div>
+    <img id="img"> <br>
+
+    <textarea name="" id="txt"></textarea>
+    <script>
+        let div = document.getElementsByTagName('div')
+        console.log(div);
+        div[0].style.width = "100px";
+        div[0].style.height = "100px";
+        div[0].style.backgroundColor = "lightblue"
+        div[0].innerHTML = "Hello1"
+
+        div[1].style.width = "100px";
+        div[1].style.height = "100px";
+        div[1].style.backgroundColor = "lightgreen"
+        div[1].innerHTML = "Hello2"
+
+        div[2].style.width = "100px";
+        div[2].style.height = "100px";
+        div[2].style.backgroundColor = "yellow"
+        div[2].innerHTML = "Hello3"
+
+        document.getElementById('img').src = "./download.jpg"
+        
+    </script>   
+</body>
+
+</html>
