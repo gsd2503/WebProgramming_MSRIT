@@ -1,0 +1,37 @@
+<!-- 
+Change images on mouse hover and mouse out
+Rotate image to 45 deg when clicked and to 0 deg when released
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Events</title>
+    <style>
+        img{
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <img src="./Assets/1.jpg" alt="" id="img">
+    <script>
+        let img = document.getElementById("img")
+        img.addEventListener("mouseover", function(){
+            img.setAttribute("src","./Assets/2.jpg")
+        })
+        img.addEventListener("mouseout", function(){
+            img.setAttribute("src","./Assets/1.jpg")
+        })
+        img.addEventListener("mousedown", function(){
+            img.style.transform = 'rotate(45deg)'
+        })
+        img.addEventListener("mouseup", function(){
+            img.style.transform = 'rotate(0deg)'
+        })
+    </script>
+</body>
+</html>
