@@ -7,10 +7,14 @@
 </head>
 <body>
     <script>
-        let num = '{"name": "SD", "age": 21, "Qualification": "MCA", "College": "MSRIT", "income": false, "Married": null}'
+        let num = '{"name": "SD", "age": 21, "qualification": "MCA", "college": "MSRIT", "income": false, "married": null}'
         let num2 = JSON.parse(num)
         console.log(num2);
-        console.log(num2["income"]);
+
+        let n = {name: "SD", age: 21, qualification: "MCA", college: "MSRIT", income: false, married: null} // JS Object
+        let n2 = JSON.stringify(n)
+        console.log(n2);
+
     </script>
 </body>
 </html>
